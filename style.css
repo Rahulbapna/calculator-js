@@ -1,0 +1,49 @@
+#sy{
+color:black;
+background-color: darkgray;
+width:50px;
+height:40px;
+border-radius: 40px;
+font-size: 20px;
+}
+#f{
+
+color:black;
+background-color: darkgray;
+width:50px;
+height:40px;
+border-radius: 40px;
+background-color: gray;
+font-size: 20px;
+}
+ 
+#main{
+	color: black;
+	background-color: white;
+	width: 220px;
+	margin: 40px auto auto auto;
+	padding: 15px;
+	border: 2px solid blue;
+	border-radius: 2px;
+}
+/*#st{
+	width: 50px;
+	height: 40px;
+}*/
+#sl{
+	width: 50px;
+	height: 40px;
+	background-color:coral;
+	border-radius: 40px;
+	font-size: 20px;
+}
+
+#result{
+	background-color: coral;
+	height: 30px;
+	padding-left:10px;
+	padding-top: 5px;
+	border: 2px solid black;
+	font-size: 20px;
+	width: 200px;
+}

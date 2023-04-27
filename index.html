@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head><title>function</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+		function keybtn(x){
+		var resultvalue = document.getElementById("result").innerHTML;
+		if(resultvalue == "0 :"){
+		document.getElementById("result").innerHTML ="";
+		} else if(resultvalue == 0){
+		document.getElementById("result").innerHTML ="";
+		}
+		
+		
+		document.getElementById("result").innerHTML  +=x;
+		
+		}
+	
+		function clear_a(){
+		document.getElementById("result").innerHTML = 0;
+		}
+		
+
+		function clear(){
+
+			 
+			document.getElementById("result").innerHTML=result.slice(0,-1);
+		}
+		function result(){
+		
+		var calculation = document.getElementById("result").innerHTML;
+		var result = eval(calculation);
+		document.getElementById("result").innerHTML = result;
+		}
+
+
+</script>
+
+</head>
+	
+<body>
+	<div id="main">
+	
+	<h3 id="result">0</h3>
+	<table>
+	<tr>
+	<td><button id="sy" onClick="keybtn('1')">1</button></td>
+	<td><button id="sy" onClick="keybtn('2')">2</button></td>
+	<td><button id="sy" onClick="keybtn('3')">3</button></td>
+	<td><button id="sl" onClick="keybtn('/')">/</button></td>
+	
+	</tr>
+	<tr>
+	<td><button id="sy" onClick="keybtn('4')">4</button></td>
+	<td><button id="f" 	onClick="keybtn('5')">5</button></td>
+	<td><button id="sy" onClick="keybtn('6')">6</button></td>
+	<td><button id="sl" onClick="keybtn('+')">+</button></td>
+	</tr>
+	<tr>
+	<td><button id="sy" onClick="keybtn('7')">7</button></td>
+	<td><button id="sy" onClick="keybtn('8')">8</button></td>
+	<td><button id="sy" onClick="keybtn('9')">9</button></td>
+	<td><button id="sl" onClick="keybtn('-')">-</button></td>
+	</tr>
+	<tr>
+	<td><button id="sl" onClick="keybtn('*')" style="font-size: 30px; padding-top:8px ;">*</button></td>
+	<td><button id="sy" onClick="keybtn('0')">0</button></td>
+	<td><button id="sl" onClick="clear_a()">AC</button></td>
+	<td><button id="sl" onClick="result()">=</button></td>
+	</table>	
+
+	</div>
+</body>
+</html>
